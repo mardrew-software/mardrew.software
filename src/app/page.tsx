@@ -21,10 +21,10 @@ export default function Home() {
                         freelance software developer
                     </p>
                     <div className="mt-16 text-2xl flex flex-col gap-4">
-                        <p className="bg-white shadow-lg py-2 px-4 max-w-max">
+                        <p className="bg-white shadow-lg py-2 px-4 max-w-max rounded">
                             Hello. I am a full-stack <b>software developer</b>
                         </p>
-                        <p className="bg-white shadow-md py-2 px-4 max-w-max">
+                        <p className="bg-white shadow-md py-2 px-4 max-w-max rounded">
                             working either <b>remotely</b> or in{' '}
                             <b>Rotterdam, the Netherlands</b>.
                         </p>
