@@ -13,7 +13,7 @@ export const About = () => {
                 width={50}
                 height={50}
             />
-            <div className="py-6 pb-16 flex flex-col max-w-[70%] items-start gap-6">
+            <div className="py-6 flex flex-col max-w-[70%] items-start gap-6">
                 <p className="text-xl">
                     I am an artist and full-stack software developer based in
                     Rotterdam.
