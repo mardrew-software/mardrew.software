@@ -12,8 +12,8 @@ export function Header() {
             />
             <div className="text-2xl flex flex-row gap-6">
                 <Link href={'#about'}>ABOUT</Link>
-                <Link href={''}>PROJECTS</Link>
-                <Link href={''}>CREDIBILITY</Link>
+                <Link href={'#projects'}>PROJECTS</Link>
+                <Link href={'#credibility'}>CREDIBILITY</Link>
             </div>
         </div>
     );
