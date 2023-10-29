@@ -5,13 +5,15 @@ const patrickHand = Patrick_Hand({ weight: ['400'], subsets: ['latin'] });
 
 export const Projects = () => {
     return (
-        <div id="projects" className="py-16 flex flex-col items-center">
-            <h1
-                className={`text-[40px] text-stone-800 ${patrickHand.className} mb-8`}
-            >
-                ... the latest projects ...
-            </h1>
-            <div>in construction...</div>
+        <div id="projects" className="py-16 flex flex-row justify-center">
+            <div className="flex flex-col items-center">
+                <h1
+                    className={`text-[40px] text-stone-800 ${patrickHand.className} mb-8`}
+                >
+                    LATEST PROJECTS
+                </h1>
+                <div>in construction...</div>
+            </div>
         </div>
     );
 };
