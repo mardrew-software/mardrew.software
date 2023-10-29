@@ -1,12 +1,9 @@
-import { Patrick_Hand } from 'next/font/google';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const patrickHand = Patrick_Hand({ weight: ['400'], subsets: ['latin'] });
-
 export function Footer() {
     return (
-        <div className="py-6 px-16 w-full flex flex-row justify-between items-center">
+        <div className="z-30 py-8 lg:py-6 px-16 w-full flex flex-col lg:flex-row gap-6 lg:gap-0 justify-between items-center bg-white lg:bg-transparent">
             <div className="flex flex-row gap-6">
                 <Link target="_blank" href={'https://www.mardrew.art'}>
                     <Image
@@ -45,7 +42,7 @@ export function Footer() {
                 height={50}
             />
             <Link
-                className="text-2xl underline hover:text-[#E9B9BD]"
+                className="text-xl lg:text-2xl underline hover:text-[#E9B9BD]"
                 href={'/the-required-bureaucracy'}
             >
                 the REQUIRED bureaucracy
