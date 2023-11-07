@@ -2,16 +2,16 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export function Header({
-    open,
-    setOpen
+    menuOpen,
+    setMenuOpen
 }: {
-    open: boolean;
-    setOpen: () => void;
+    menuOpen: boolean;
+    setMenuOpen: () => void;
 }) {
     return (
         <div
             className={`flex flex-col  ${
-                open ? 'bg-[#E9B9BD]' : 'bg-[#ffe280]'
+                menuOpen ? 'bg-[#E9B9BD]' : 'bg-[#ffe280]'
             }`}
         >
             <div className="flex flex-row w-full py-6 px-8 lg:px-16 items-center justify-between">
@@ -33,7 +33,7 @@ export function Header({
                     </Link>
                 </div>
                 <Image
-                    onClick={setOpen}
+                    onClick={setMenuOpen}
                     className="z-20 flex lg:hidden"
                     alt="menu"
                     width={40}
@@ -41,24 +41,24 @@ export function Header({
                     src={'/burger.png'}
                 />
             </div>
-            {open && (
-                <div className="fixed w-full h-full z-10 mt-[92px] flex lg:hidden bg-[#E9B9BD] px-8 pb-8 pt-16 text-4xl flex-col items-center gap-6">
+            {menuOpen && (
+                <div className="fixed w-full h-screen z-10 mt-[92px] flex lg:hidden bg-[#E9B9BD] px-8 pb-8 pt-16 text-4xl flex-col items-center gap-6">
                     <Link
-                        onClick={setOpen}
+                        onClick={setMenuOpen}
                         className="bg-white px-4 py-1 shadow-md hover:underline"
                         href={'#about'}
                     >
                         ABOUT
                     </Link>
                     <Link
-                        onClick={setOpen}
+                        onClick={setMenuOpen}
                         className="bg-white px-4 py-1 shadow-md  hover:underline"
                         href={'#projects'}
                     >
                         PROJECTS
                     </Link>
                     <Link
-                        onClick={setOpen}
+                        onClick={setMenuOpen}
                         className="bg-white px-4 py-1 shadow-md  hover:underline"
                         href={'#credibility'}
                     >

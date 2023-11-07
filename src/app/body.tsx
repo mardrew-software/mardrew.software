@@ -10,22 +10,31 @@ const patrickHand = Patrick_Hand({ weight: ['400'], subsets: ['latin'] });
 const inclusiveSans = Inclusive_Sans({ weight: ['400'], subsets: ['latin'] });
 
 export const Body = ({ children }: { children: React.ReactNode }) => {
-    const [open, setOpen] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
+    const [showModal, setShowModal] = useState(false);
     return (
         <body
             className={`min-h-screen flex flex-col justify-between ${
                 patrickHand.className
-            } ${open ? 'overflow-hidden' : ''}`}
+            } ${menuOpen ? 'overflow-hidden' : ''}`}
+            onClick={() => setShowModal(false)}
         >
             <div>
-                <Header open={open} setOpen={() => setOpen(!open)} />
-                {!open && (
+                <Header
+                    menuOpen={menuOpen}
+                    setMenuOpen={() => setMenuOpen(!menuOpen)}
+                />
+                {!menuOpen && (
                     <main className={`w-full ${inclusiveSans.className}`}>
                         {children}
                     </main>
                 )}
             </div>
-            <Footer />
+            <Footer
+                menuOpen={menuOpen}
+                showModal={showModal}
+                setShowModal={setShowModal}
+            />
         </body>
     );
 };

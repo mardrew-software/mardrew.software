@@ -1,9 +1,12 @@
+const { withNextVideo } = require('next-video/process');
+
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {};
 
 module.exports = {
     nextConfig,
+    withNextVideo,
     images: {
-        domains: ['media.graphassets.com'],
-    },
-}
+        domains: ['ik.imagekit.io']
+    }
+};

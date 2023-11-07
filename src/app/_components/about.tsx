@@ -1,13 +1,5 @@
 import Image from 'next/image';
-
-import {
-    Patrick_Hand,
-    Inclusive_Sans,
-    Just_Me_Again_Down_Here
-} from 'next/font/google';
 import { RedactedScript } from './redactedScript';
-
-const patrickHand = Patrick_Hand({ weight: ['400'], subsets: ['latin'] });
 
 export const About = () => {
     return (
@@ -19,18 +11,18 @@ export const About = () => {
                 width={50}
                 height={50}
             />
-            <div className="py-6 flex flex-col max-w-[70%] items-start gap-6">
+            <div className="py-6 flex flex-col px-8 lg:px-0 max-w-[100%] lg:max-w-[70%] items-start gap-4 lg:gap-6">
                 <p className="text-3xl">
                     I am an artist and full-stack software developer based in
                     Rotterdam.
                 </p>
-                <p className="text-xl">
+                <p className="text-xl text-right lg:text-left">
                     I like to create for small companies, thought-provoking
-                    grassroot or non-profit organisations, or individuals, from
+                    grassroot or non-profit collectives, and individuals, from
                     the very beggining to the very end.
                 </p>
-                <RedactedScript />
-                <p className="text-2xl">
+                <RedactedScript text="xdewdeukyufwefwe...wqefwfdewnjkdfnewoifne.........cdsfwf..........." />
+                <p className="text-xl lg:text-2xl">
                     I charge fair prices according to your location and
                     financial needs.
                 </p>

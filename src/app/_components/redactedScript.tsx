@@ -5,10 +5,10 @@ const redacted = Redacted_Script({
     subsets: ['latin']
 });
 
-export const RedactedScript = () => (
+export const RedactedScript = ({ text }: { text: string }) => (
     <span
         className={`overflow-clip w-[100%] text-[50px] ${redacted.className}`}
     >
-        xdewdeukyufwefwe...wqefwfdewnjkdfnewoifne.........cdsfwf...........
+        {text}
     </span>
 );
