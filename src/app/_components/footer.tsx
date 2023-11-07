@@ -48,13 +48,15 @@ export function Footer({
                     />
                 </Link>
             </div>
-            <Image
-                className="min-h-[50px]"
-                alt="mardrew.software"
-                src={'/logo_text_rebranded.png'}
-                width={170}
-                height={50}
-            />
+            <Link href={'/'}>
+                <Image
+                    className="min-h-[50px]"
+                    alt="mardrew.software"
+                    src={'/logo_text_rebranded.png'}
+                    width={170}
+                    height={50}
+                />
+            </Link>
             <div
                 className="cursor-pointer text-xl lg:text-2xl underline hover:text-[#E9B9BD]"
                 onClick={(e) => {

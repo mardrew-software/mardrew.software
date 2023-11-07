@@ -15,12 +15,14 @@ export function Header({
             }`}
         >
             <div className="flex flex-row w-full py-6 px-8 lg:px-16 items-center justify-between">
-                <Image
-                    alt="mardrew.software"
-                    src={'/logo_text_rebranded.png'}
-                    width={150}
-                    height={150}
-                />
+                <Link href={'/'}>
+                    <Image
+                        alt="mardrew.software"
+                        src={'/logo_text_rebranded.png'}
+                        width={150}
+                        height={150}
+                    />
+                </Link>
                 <div className="hidden lg:flex text-2xl flex-row gap-6">
                     <Link className="hover:underline" href={'#about'}>
                         ABOUT

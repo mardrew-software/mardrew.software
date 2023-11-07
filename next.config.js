@@ -7,6 +7,6 @@ module.exports = {
     nextConfig,
     withNextVideo,
     images: {
-        domains: ['ik.imagekit.io']
+        domains: ['ik.imagekit.io', 'media.graphassets.com']
     }
 };
