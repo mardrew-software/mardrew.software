@@ -16,9 +16,7 @@ export const Projects = async () => {
                     LATEST PROJECTS
                 </h1>
 
-                <div className="flex p-8 w-[1000px]">
-                    <Carrousel projects={projects} />
-                </div>
+                <Carrousel projects={projects} />
             </div>
         </div>
     );

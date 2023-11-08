@@ -1,5 +1,6 @@
 export type Project = {
     date: string;
+    slug: string;
     id: string;
     image: ProjectImage;
     title: string;
@@ -20,6 +21,7 @@ export type ProjectStep = {
     image: ProjectImage;
     title: string;
     description: ProjectDescription;
+    imageOnRight: boolean;
 };
 
 export type ProjectDescription = {

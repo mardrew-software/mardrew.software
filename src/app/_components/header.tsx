@@ -24,13 +24,13 @@ export function Header({
                     />
                 </Link>
                 <div className="hidden lg:flex text-2xl flex-row gap-6">
-                    <Link className="hover:underline" href={'#about'}>
+                    <Link className="hover:underline" href={'/#about'}>
                         ABOUT
                     </Link>
-                    <Link className="hover:underline" href={'#projects'}>
+                    <Link className="hover:underline" href={'/#projects'}>
                         PROJECTS
                     </Link>
-                    <Link className="hover:underline" href={'#credibility'}>
+                    <Link className="hover:underline" href={'/#credibility'}>
                         CREDIBILITY
                     </Link>
                 </div>

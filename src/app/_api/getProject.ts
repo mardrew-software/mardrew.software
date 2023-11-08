@@ -1,4 +1,4 @@
-export async function getProjects() {
+export async function getProject(slug: string) {
     const response = await fetch(process.env.HYGRAPH_ENDPOINT as string, {
         method: 'POST',
         headers: {
@@ -8,7 +8,7 @@ export async function getProjects() {
         body: JSON.stringify({
             query: `        
             query Projects {
-              projects {
+              projects(where: {slug: "${slug}"}) {
                 slug
                 date
                 id
@@ -20,18 +20,35 @@ export async function getProjects() {
                 }
                 title
                 techstack
+                steps {
+                  ... on ProjectStep {
+                    id
+                    imageOnRight
+                    image {
+                      id
+                      height
+                      width
+                      url
+                    }
+                    title
+                    description {
+                      html
+                      text
+                    }
+                  }
+                }
                 description {
                   html
                   text
                 }
               }
-            }
+            }            
             `
         })
     });
     const json = await response.json();
     if (json && json.data) {
-        return json.data.projects;
+        return json.data.projects[0];
     } else {
         return null;
     }
