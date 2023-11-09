@@ -11,7 +11,7 @@ import Link from 'next/link';
 const patrickHand = Patrick_Hand({ weight: ['400'], subsets: ['latin'] });
 
 export default async function Page({ params }: { params: { slug: string } }) {
-    const project = await getProject(params.slug[0]);
+    const project = await getProject(params?.slug[0]);
     return (
         <div className="flex flex-col gap-8 p-8 pb-4 lg:p-16">
             <div className="flex flex-col gap-2">
