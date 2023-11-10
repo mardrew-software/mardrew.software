@@ -14,7 +14,7 @@ export function Footer({
 }) {
     return (
         <div
-            className={`z-30 py-8 lg:py-6 px-16 w-full flex flex-col lg:flex-row gap-6 lg:gap-0 justify-between items-center bg-white lg:bg-transparent ${
+            className={`z-30 mt-16 py-8 lg:py-6 px-16 w-full flex flex-col lg:flex-row gap-6 lg:gap-0 justify-between items-center bg-white lg:bg-transparent ${
                 menuOpen ? 'fixed bottom-0' : ''
             }`}
         >

@@ -9,7 +9,7 @@ export const Projects = async () => {
     return (
         <div
             id="projects"
-            className="py-16 flex flex-row justify-center px-8 lg:px-0"
+            className="pt-16 flex flex-row justify-center px-8 lg:px-0"
         >
             <div className="flex flex-col items-center">
                 <h1 className={`text-[50px] ${patrickHand.className}`}>

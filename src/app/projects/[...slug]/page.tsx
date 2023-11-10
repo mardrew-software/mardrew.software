@@ -2,7 +2,7 @@ import { getProject } from '@/app/_api/getProject';
 import { Tags } from '@/app/_components/tags';
 import { DateTag } from '@/app/_components/dateTag';
 import { ParsedText } from '@/app/_components/parsedText';
-import { ProjectImage, ProjectStep } from '@/app/_types';
+import { Image as ProjectImage, ProjectStep } from '@/app/_types';
 import { Patrick_Hand } from 'next/font/google';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -39,7 +39,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
     return (
         <>
             {project && (
-                <div className="flex flex-col gap-8 p-8 pb-4 lg:p-16">
+                <div className="flex flex-col gap-8 mt-8 lg:px-16">
                     <div className="flex flex-col gap-2">
                         <Link
                             href={'/'}
@@ -76,13 +76,15 @@ export default async function Page({ params }: { params: { slug: string } }) {
                                     />
                                 </div>
                             </div>
-                            {project.steps.length > 0 && <Image
-                                className="mx-auto mt-10 animate-bounce"
-                                alt="arrow down"
-                                src={'/arrow_down.png'}
-                                width={50}
-                                height={50}
-                            />}
+                            {project.steps.length > 0 && (
+                                <Image
+                                    className="mx-auto mt-10 animate-bounce"
+                                    alt="arrow down"
+                                    src={'/arrow_down.png'}
+                                    width={50}
+                                    height={50}
+                                />
+                            )}
                         </div>
                     </div>
                     <div className="lg:px-16 flex flex-col gap-8">

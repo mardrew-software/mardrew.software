@@ -2,15 +2,15 @@ export type Project = {
     date: string;
     slug: string;
     id: string;
-    image: ProjectImage;
+    image: Image;
     title: string;
     techstack: string[];
     steps: ProjectStep[];
-    description: ProjectDescription;
+    description: Description;
     smallDescription: string;
 };
 
-export type ProjectImage = {
+export type Image = {
     id: string;
     height: number;
     width: number;
@@ -20,13 +20,23 @@ export type ProjectImage = {
 
 export type ProjectStep = {
     id: string;
-    image: ProjectImage;
+    image: Image;
     title: string;
-    description: ProjectDescription;
+    description: Description;
     imageOnRight: boolean;
 };
 
-export type ProjectDescription = {
+export type Description = {
     text: string;
     html: string;
 };
+
+export type Credit = {
+    description: Description,
+      endDate: string,
+      id: string,
+      image: Image,
+      startDate: string,
+      title: string,
+      type: 'education' | 'experience'
+}

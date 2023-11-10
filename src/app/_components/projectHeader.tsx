@@ -7,21 +7,33 @@ import { Tags } from './tags';
 export const ProjectHeader = ({ project }: { project: Project }) => {
     return (
         <Link href={`/projects/${project.slug}`}>
-            <div className="rounded cursor-pointer flex flex-col lg:flex-row border-2 border-black bg-[#ffe280] lg:w-[600px] lg:max-h-[300px]">
+            <div className="shadow-md rounded cursor-pointer flex flex-col lg:flex-row border-2 border-black bg-[#ffe280] lg:max-w-[1000px] lg:h-[350px]">
                 <Image
-                    className="flex-shrink-0"
+                    className="flex-shrink-0 hover:opacity-90"
                     alt={project.title}
                     src={project.image.url}
-                    width={300}
-                    height={300}
+                    width={350}
+                    height={350}
                 />
-                <div className="flex flex-col gap-4 p-4 px-8 w-full">
-                    <span className={`text-xl font-bold`}>{project.title}</span>
-                    <p className="">{project.smallDescription}</p>
-                    <Tags
-                        labels={project.techstack}
-                        classname="text-sm px-1 border-solid border-[1px] border-black bg-white"
-                    />
+                <div className="flex flex-col justify-between p-8 w-full">
+                    <div className="flex flex-col gap-4 w-full">
+                        <span className={`text-xl font-bold`}>
+                            {project.title}
+                        </span>
+                        <p className="">{project.smallDescription}</p>
+                        <Tags
+                            labels={project.techstack}
+                            classname="text-md px-1 border-solid border-[1px] border-black bg-white"
+                        />
+                    </div>
+                    <div className="flex w-full justify-end">
+                        <Link
+                            href={`/projects/${project.slug}`}
+                            className="hover:bg-white hover:text-black px-2 py-1 text-white bg-black border-solid border-2 border-black max-w-fit rounded"
+                        >
+                            read more
+                        </Link>
+                    </div>
                 </div>
             </div>
         </Link>
