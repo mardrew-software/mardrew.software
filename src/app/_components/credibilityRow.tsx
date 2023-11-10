@@ -1,9 +1,18 @@
+'use client';
+import parse from 'html-react-parser';
 import { Credit } from '../_types';
 import Image from 'next/image';
-import { ParsedText } from './parsedText';
+
 import { DateTag } from './dateTag';
+import { ReactNode, useEffect, useState } from 'react';
+import { options } from '../_utils/parsedText';
 
 export const CredibilityRow = ({ credit }: { credit: Credit }) => {
+    const [parsedText, setParsedText] = useState<ReactNode>('');
+
+    useEffect(() => {
+        setParsedText(parse(credit.description.html as string, options));
+    }, []);
     return (
         <div className="flex flex-row gap-4">
             <Image
@@ -33,7 +42,7 @@ export const CredibilityRow = ({ credit }: { credit: Credit }) => {
                     )}
                 </span>
                 <div className="font-bold text-xl">{credit.title}</div>
-                <ParsedText html={credit.description.html} />
+                <div className="flex flex-col gap-2">{parsedText}</div>
             </div>
         </div>
     );
