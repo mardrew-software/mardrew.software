@@ -24,6 +24,7 @@ export async function getProjects() {
                   html
                   text
                 }
+                smallDescription
               }
             }
             `

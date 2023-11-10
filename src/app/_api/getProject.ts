@@ -29,6 +29,7 @@ export async function getProject(slug: string) {
                       height
                       width
                       url
+                      mimeType
                     }
                     title
                     description {

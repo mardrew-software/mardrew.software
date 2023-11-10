@@ -7,6 +7,7 @@ export type Project = {
     techstack: string[];
     steps: ProjectStep[];
     description: ProjectDescription;
+    smallDescription: string;
 };
 
 export type ProjectImage = {
@@ -14,6 +15,7 @@ export type ProjectImage = {
     height: number;
     width: number;
     url: string;
+    mimeType: string;
 };
 
 export type ProjectStep = {
