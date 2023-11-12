@@ -1,5 +1,4 @@
 'use client';
-import { Tags } from '@/app/_components/tags';
 import { DateTag } from '@/app/_components/dateTag';
 import { Project as ProjectProp, ProjectStep } from '@/app/_types';
 import { Patrick_Hand } from 'next/font/google';
@@ -9,6 +8,7 @@ import { Step } from './step';
 import { ReactNode, useEffect, useState } from 'react';
 import { options } from '@/app/_utils/parsedText';
 import parse from 'html-react-parser';
+import { Tags } from '@/app/_components/tags';
 
 const patrickHand = Patrick_Hand({ weight: ['400'], subsets: ['latin'] });
 
@@ -16,7 +16,7 @@ export const Project = ({ project }: { project: ProjectProp }) => {
     const [parsedText, setParsedText] = useState<ReactNode>('');
 
     useEffect(() => {
-        setParsedText(parse(project.description.html as string, options));
+        setParsedText(parse(project.description.html, options));
     }, []);
     return (
         <div className="flex flex-col gap-8 mt-8 px-8 lg:px-16">
