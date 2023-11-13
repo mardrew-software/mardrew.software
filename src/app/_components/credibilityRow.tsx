@@ -16,7 +16,7 @@ export const CredibilityRow = ({ credit }: { credit: Credit }) => {
     return (
         <div className="flex flex-row gap-4">
             <Image
-                className="w-auto h-auto max-h-[70px] max-w-[70px] py-1"
+                className="w-auto h-auto lg:max-h-[70px] max-h-[50px] max-w-[50px] lg:max-w-[70px] py-1"
                 src={credit.image.url}
                 width={credit.image.width}
                 height={credit.image.height}

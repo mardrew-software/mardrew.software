@@ -6,15 +6,15 @@ import { TechTags } from './techTags';
 export const ProjectHeader = ({ project }: { project: Project }) => {
     return (
         <Link href={`/projects/${project.slug}`}>
-            <div className="shadow-md rounded cursor-pointer flex flex-col lg:flex-row border-2 border-black bg-[#ffe280] lg:max-w-[1000px] lg:h-[350px]">
+            <div className="shadow-md rounded cursor-pointer flex flex-col md:flex-row border-2 border-black bg-[#ffe280] md:max-w-[1000px] md:h-[350px] ">
                 <Image
-                    className="flex-shrink-0 hover:opacity-90 lg:min-w-[350px] lg:min-h-[350px]"
+                    className="md:flex-shrink-0 hover:opacity-90 min-w-[100%] md:min-w-[350px]"
                     alt={project.title}
                     src={project.image.url}
                     width={350}
                     height={350}
                 />
-                <div className="flex flex-col justify-between p-8 w-full">
+                <div className="flex flex-col justify-between p-4 md:p-8 h-full w-full gap-8 md:gap-0">
                     <div className="flex flex-col gap-4 w-full">
                         <span className={`text-xl font-bold`}>
                             {project.title}

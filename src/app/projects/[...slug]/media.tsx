@@ -1,7 +1,6 @@
 'use client';
 import { Image as ProjectImage } from '@/app/_types';
 import Image from 'next/image';
-import { Video } from '@/app/_components/video';
 
 export const Media = ({
     image,
@@ -13,7 +12,9 @@ export const Media = ({
     return (
         <>
             {image.mimeType.includes('video') ? (
-                <Video video={image} />
+                <video className='h-full lg:max-w-[40%]' controls autoPlay={true} muted playsInline >
+                    <source src={image.url} type="video/mp4"/>                  
+                </video>
             ) : (
                 <Image
                     className="lg:max-w-[40%]"

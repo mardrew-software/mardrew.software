@@ -19,14 +19,14 @@ export function Footer({
             }`}
         >
             <div className="flex flex-row gap-6">
-                <Link target="_blank" href={'https://www.mardrew.art'}>
+                {/* <Link target="_blank" href={'https://www.mardrew.art'}>
                     <Image
                         src={'/logo_pencil.png'}
                         width={50}
                         height={50}
                         alt="logo_pencil"
                     />
-                </Link>
+                </Link> */}
                 <Link
                     target="_blank"
                     href={'https://www.linkedin.com/in/mrrvm/'}
@@ -48,7 +48,7 @@ export function Footer({
                     />
                 </Link>
             </div>
-            <Link href={'/'}>
+            <Link className="hidden lg:flex" href={'/'}>
                 <Image
                     className="min-h-[50px]"
                     alt="mardrew.software"
@@ -58,7 +58,7 @@ export function Footer({
                 />
             </Link>
             <div
-                className="cursor-pointer text-xl lg:text-2xl underline hover:text-[#E9B9BD]"
+                className="hidden lg:flex cursor-pointer text-xl lg:text-2xl hover:text-[#E9B9BD]"
                 onClick={(e) => {
                     e.stopPropagation();
                     setShowModal(true);

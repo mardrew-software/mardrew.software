@@ -26,21 +26,21 @@ export const About = () => {
                     I charge fair prices according to your location and
                     financial needs.
                 </p>
-                <p className="text-2xl leading-loose">
+                <p className="text-xl lg:text-2xl leading-loose">
                     I work with{' '}
-                    <span className="rounded text-3xl px-2 shadow-sm border-solid border-[#ffe280] border-2">
+                    <span className="rounded text-2xl lg:text-3xl px-2 shadow-sm border-solid border-[#ffe280] border-2">
                         illustrations
                     </span>
                     ,{' '}
-                    <span className="rounded text-3xl px-2 border-solid border-[#E9B9BD] border-2 shadow-sm">
+                    <span className="rounded text-2xl lg:text-3xl px-2 border-solid border-[#E9B9BD] border-2 shadow-sm">
                         web design
                     </span>
                     ,{' '}
-                    <span className="rounded text-3xl px-2 bg-[#E9B9BD] shadow-sm border-solid border-[#E9B9BD] border-2">
+                    <span className="rounded text-2xl lg:text-3xl px-2 bg-[#E9B9BD] shadow-sm border-solid border-[#E9B9BD] border-2">
                         web development
                     </span>
                     , backend -{' '}
-                    <span className="rounded text-3xl px-2 bg-[#ffe280]  border-solid border-[#ffe280] border-2 shadow-sm">
+                    <span className="rounded text-2xl lg:text-3xl px-2 bg-[#ffe280]  border-solid border-[#ffe280] border-2 shadow-sm">
                         server and database
                     </span>{' '}
                     - development, at a small scale.

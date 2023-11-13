@@ -3,7 +3,6 @@ import { Element, Text } from 'domhandler';
 import { DOMNode, HTMLReactParserOptions } from 'html-react-parser';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Video } from '../_components/video';
 
 export const options: HTMLReactParserOptions = {
     replace(domNode: DOMNode) {
@@ -27,22 +26,6 @@ export const options: HTMLReactParserOptions = {
                     width={parseInt(node.attribs.width)}
                     height={parseInt(node.attribs.height)}
                 />
-            );
-        } else if (node.name === 'video') {
-            return (
-                <>
-                    {node.attribs.id && (
-                        <Video
-                            video={{
-                                id: node.attribs.id,
-                                url: node.attribs.src,
-                                width: parseInt(node.attribs.width),
-                                height: parseInt(node.attribs.height),
-                                mimeType: node.attribs.mimeType
-                            }}
-                        />
-                    )}
-                </>
             );
         }
     }

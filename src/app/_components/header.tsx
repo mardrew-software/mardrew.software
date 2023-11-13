@@ -38,8 +38,8 @@ export function Header({
                     onClick={setMenuOpen}
                     className="z-20 flex lg:hidden"
                     alt="menu"
-                    width={40}
-                    height={40}
+                    width={30}
+                    height={30}
                     src={'/burger.png'}
                 />
             </div>

@@ -42,7 +42,7 @@ export const Project = ({ project }: { project: ProjectProp }) => {
 
             <div className="w-full flex flex-col items-center lg:items-start lg:flex-row justify-center gap-8">
                 <Image
-                    className="lg:max-w-[40%]"
+                    className="lg:max-w-[40%] rounded-sm"
                     alt="arrow down"
                     src={project.image.url}
                     width={project.image.width}
