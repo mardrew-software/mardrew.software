@@ -3,6 +3,7 @@ import { Banner } from './_components/banner';
 import { About } from './_components/about';
 import { Projects } from './_components/projects';
 import { Credibility } from './_components/credibility';
+import { RedactedScript } from './_components/redactedScript';
 
 export default function Home() {
     return (
