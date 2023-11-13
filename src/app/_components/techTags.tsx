@@ -1,4 +1,4 @@
-export const Tags = ({
+export const TechTags = ({
     labels,
     classname = 'font-extrabold py-1 px-4 border-solid border-2 border-black bg-[#ffe280]'
 }: {

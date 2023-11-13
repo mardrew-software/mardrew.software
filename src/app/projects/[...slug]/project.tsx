@@ -8,8 +8,7 @@ import { Step } from './step';
 import { ReactNode, useEffect, useState } from 'react';
 import { options } from '@/app/_utils/parsedText';
 import parse from 'html-react-parser';
-import { Tags } from '@/app/_components/tags';
-// import { Tags } from '@/app/_components/tags';
+import { TechTags } from '@/app/_components/techTags';
 
 const patrickHand = Patrick_Hand({ weight: ['400'], subsets: ['latin'] });
 
@@ -52,7 +51,7 @@ export const Project = ({ project }: { project: ProjectProp }) => {
                 <div className="flex flex-col justify-between lg:w-[250px]">
                     <div className="flex flex-col gap-4">
                         <DateTag date={project.date} />
-                        <Tags labels={project.techstack} />
+                        <TechTags labels={project.techstack} />
                         <div className="text-justify">
                             <div className="flex flex-col gap-2">
                                 {parsedText}

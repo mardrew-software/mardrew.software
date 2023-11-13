@@ -1,8 +1,7 @@
 import { Project } from '../_types';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Tags } from './tags';
-// import { Tags } from './tags';
+import { TechTags } from './techTags';
 
 export const ProjectHeader = ({ project }: { project: Project }) => {
     return (
@@ -21,7 +20,7 @@ export const ProjectHeader = ({ project }: { project: Project }) => {
                             {project.title}
                         </span>
                         <p className="">{project.smallDescription}</p>
-                        <Tags
+                        <TechTags
                             labels={project.techstack}
                             classname="text-md px-1 border-solid border-[1px] border-black bg-white"
                         />
