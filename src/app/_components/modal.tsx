@@ -22,7 +22,9 @@ export default function Modal({
                         className="border-0 rounded-lg relative flex flex-col w-full bg-white outline-none focus:outline-none"
                     >
                         <div className="bg-[#E9B9BD] flex items-start justify-between pl-8 pr-4 py-4 rounded-t">
-                            <h3 className="text-3xl font-semibold">{title}</h3>
+                            <h3 className="text-xl lg:text-2xl font-semibold">
+                                {title}
+                            </h3>
                             <div
                                 className="cursor-pointer p-1 ml-auto bg-transparent border-0 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                                 onClick={closeModal}

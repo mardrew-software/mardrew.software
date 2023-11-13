@@ -58,7 +58,7 @@ export function Footer({
                 />
             </Link>
             <div
-                className="hidden lg:flex cursor-pointer text-xl lg:text-2xl hover:text-[#E9B9BD]"
+                className="flex justify-center text-center cursor-pointer text-md md:text-xl hover:text-[#E9B9BD]"
                 onClick={(e) => {
                     e.stopPropagation();
                     setShowModal(true);
@@ -72,32 +72,35 @@ export function Footer({
                     closeModal={() => setShowModal(false)}
                 >
                     <div className="flex flex-col p-8 gap-4">
-                        <div className="flex gap-4 items-center">
-                            <span className="font-bold text-xl">email via</span>
+                        <div className="flex gap-2 lg:gap-4  items-start">
+                            <span className="font-bold lg:text-xl">
+                                email via
+                            </span>
                             <span>mariana@mardrew.software</span>
                         </div>
                         <hr />
-                        <div className="flex gap-4 items-center">
-                            <span className="font-bold text-xl">
+                        <div className="flex gap-2 lg:gap-4  items-start">
+                            <span className="font-bold lg:text-xl">
                                 company name
                             </span>
                             <span>mardrew</span>
                         </div>
-                        <div className="flex gap-4 items-center">
-                            <span className="font-bold text-xl">
-                                trade names
-                            </span>
-                            <span>mardrew software, mardrew art</span>
-                        </div>
-                        <div className="flex gap-4 items-center">
-                            <span className="font-bold text-xl">
+
+                        <div className="flex gap-2 lg:gap-4  items-start">
+                            <span className="font-bold lg:text-xl">
                                 kvk-nummer
                             </span>
                             <span>84172649</span>
                         </div>
-                        <div className="flex gap-4 items-center">
-                            <span className="font-bold text-xl">btw-id</span>
+                        <div className="flex gap-2 lg:gap-4 items-start">
+                            <span className="font-bold lg:text-xl">btw-id</span>
                             <span>NL003922870B12</span>
+                        </div>
+                        <div className="flex gap-2 lg:gap-4 items-start">
+                            <span className="font-bold lg:text-xl min-w-[100px]">
+                                trade names
+                            </span>
+                            <span>mardrew software, mardrew art</span>
                         </div>
                     </div>
                 </Modal>
