@@ -42,7 +42,7 @@ export const Project = ({ project }: { project: ProjectProp }) => {
 
             <div className="w-full flex flex-col items-center lg:items-start lg:flex-row justify-center gap-8">
                 <Image
-                    className="lg:max-w-[40%] rounded-sm"
+                    className="lg:w-[40%] rounded-sm max-w-[800px]"
                     alt="arrow down"
                     src={project.image.url}
                     width={project.image.width}
@@ -69,7 +69,7 @@ export const Project = ({ project }: { project: ProjectProp }) => {
                     )}
                 </div>
             </div>
-            <div className="lg:px-16 flex flex-col gap-8">
+            <div className="lg:px-16 flex flex-col items-center gap-8">
                 {project.steps.map((s: ProjectStep, index: number) => {
                     return <Step key={index} s={s} />;
                 })}

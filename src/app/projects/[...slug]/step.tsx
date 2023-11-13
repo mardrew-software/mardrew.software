@@ -13,7 +13,7 @@ export const Step = ({ s }: { s: ProjectStep }) => {
     }, []);
     return (
         <div
-            className={`flex flex-col gap-8 border-solid border-2 border-black p-4 lg:p-8 shadow-[6px_6px_0px_0px_#ffe280] rounded-sm`}
+            className={`flex flex-col gap-8 border-solid border-2 border-black p-4 lg:p-8 shadow-[6px_6px_0px_0px_#ffe280] rounded-sm max-w-[1000px]`}
         >
             <div className={`underline underline-offset-8 text-xl`}>
                 {s.title}
