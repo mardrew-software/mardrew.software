@@ -5,7 +5,7 @@ const patrickHand = Patrick_Hand({ weight: ['400'], subsets: ['latin'] });
 
 export const Banner = () => {
     return (
-        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 py-8 lg:py-16 px-8 lg:px-16 lg:px-16 bg-[#ffe280]">
+        <div className="justify-center flex flex-col lg:flex-row items-center gap-8 lg:gap-16 py-8 lg:py-16 px-8 lg:px-16 lg:px-16 bg-[#ffe280]">
             <Image
                 className="w-[80%] max-w-[740px]"
                 alt="mardrew.software"
