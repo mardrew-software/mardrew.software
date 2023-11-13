@@ -64,23 +64,19 @@ export function Footer({
                     setShowModal(true);
                 }}
             >
-                BUREAUCRACY
-            </div>
-            <div
-                className="hidden lg:flex cursor-pointer text-xl lg:text-2xl hover:text-[#E9B9BD]"
-                onClick={(e) => {
-                    e.stopPropagation();
-                    setShowModal(true);
-                }}
-            >
-                CONTACT
+                CONTACT & BUREAUCRACY
             </div>
             {showModal && (
                 <Modal
-                    title="BUREAUCRACY"
+                    title="CONTACT & BUREAUCRACY"
                     closeModal={() => setShowModal(false)}
                 >
                     <div className="flex flex-col p-8 gap-4">
+                        <div className="flex gap-4 items-center">
+                            <span className="font-bold text-xl">email via</span>
+                            <span>mariana@mardrew.software</span>
+                        </div>
+                        <hr />
                         <div className="flex gap-4 items-center">
                             <span className="font-bold text-xl">
                                 company name
@@ -102,10 +98,6 @@ export function Footer({
                         <div className="flex gap-4 items-center">
                             <span className="font-bold text-xl">btw-id</span>
                             <span>NL003922870B12</span>
-                        </div>
-                        <div className="flex gap-4 items-center">
-                            <span className="font-bold text-xl">email</span>
-                            <span>mariana@mardrew.software</span>
                         </div>
                     </div>
                 </Modal>
