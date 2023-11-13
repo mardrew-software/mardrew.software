@@ -1,6 +1,7 @@
 import { Project } from '../_types';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Tags } from './tags';
 // import { Tags } from './tags';
 
 export const ProjectHeader = ({ project }: { project: Project }) => {
@@ -20,10 +21,10 @@ export const ProjectHeader = ({ project }: { project: Project }) => {
                             {project.title}
                         </span>
                         <p className="">{project.smallDescription}</p>
-                        {/* <Tags
+                        <Tags
                             labels={project.techstack}
                             classname="text-md px-1 border-solid border-[1px] border-black bg-white"
-                        /> */}
+                        />
                     </div>
                     <div className="flex w-full justify-end">
                         <span className="hover:bg-white hover:text-black px-2 py-1 text-white bg-black border-solid border-2 border-black max-w-fit rounded">
