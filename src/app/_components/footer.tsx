@@ -66,6 +66,15 @@ export function Footer({
             >
                 BUREAUCRACY
             </div>
+            <div
+                className="hidden lg:flex cursor-pointer text-xl lg:text-2xl hover:text-[#E9B9BD]"
+                onClick={(e) => {
+                    e.stopPropagation();
+                    setShowModal(true);
+                }}
+            >
+                CONTACT
+            </div>
             {showModal && (
                 <Modal
                     title="BUREAUCRACY"
