@@ -7,7 +7,7 @@ export const Banner = () => {
     return (
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 py-8 lg:py-16 px-8 lg:px-16 lg:px-16 bg-[#ffe280]">
             <Image
-                className="w-[80%]"
+                className="w-[80%] max-w-[740px]"
                 alt="mardrew.software"
                 src={'/logo_pink_rebranded.png'}
                 width={500}
