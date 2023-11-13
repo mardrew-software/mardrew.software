@@ -26,7 +26,7 @@ export const About = () => {
                     I charge fair prices according to your location and
                     financial needs.
                 </p>
-                <p className="text-xl lg:text-2xl leading-loose">
+                <p className="text-xl lg:text-2xl flex flex-row flex-wrap gap-1">
                     I work with{' '}
                     <span className="rounded text-2xl lg:text-3xl px-2 shadow-sm border-solid border-[#ffe280] border-2">
                         illustrations
