@@ -12,7 +12,9 @@ export const Credibility = async () => {
             id="credibility"
             className="flex flex-col items-center gap-6 mt-16 px-4 md:px-8 md:p-0"
         >
-            <h1 className={`text-[30px] md:text-[50px] ${patrickHand.className}`}>
+            <h1
+                className={`text-[30px] md:text-[50px] ${patrickHand.className}`}
+            >
                 CREDIBILITY
             </h1>
 
@@ -27,7 +29,7 @@ export const Credibility = async () => {
                             })}
                     </div>
                 </div>
-                <div className="flex flex-col border-solid border-2 border-black p-8 shadow-[6px_6px_0px_0px_#ffe280] rounded-sm p-6 gap-4">
+                <div className="flex flex-col border-solid border-2 border-black p-8 shadow-[6px_6px_0px_0px_#ffe280] rounded-sm p-4 md:p-6 gap-4">
                     <div className="text-2xl pb-2">education</div>
                     <div className="flex flex-col w-full gap-4">
                         {credits
