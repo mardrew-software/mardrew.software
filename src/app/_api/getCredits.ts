@@ -8,7 +8,7 @@ export async function getCredits() {
         body: JSON.stringify({
             query: `        
             query Credits {
-              credits {
+              credits(orderBy: startDate_DESC) {
                 description {
                   html
                   text
