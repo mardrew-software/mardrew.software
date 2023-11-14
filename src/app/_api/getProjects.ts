@@ -8,7 +8,7 @@ export async function getProjects() {
         body: JSON.stringify({
             query: `        
             query Projects {
-              projects(orderBy: publishedAt_DESC) {
+              projects(orderBy: order_ASC) {
                 slug
                 date
                 id
