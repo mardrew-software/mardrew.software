@@ -19,7 +19,7 @@ export const About = () => {
                 <p className="text-xl text-right lg:text-left">
                     I like to create for small companies, thought-provoking
                     grassroot or non-profit collectives, and individuals, from
-                    the very begining to the very end.
+                    the very beginning to the very end.
                 </p>
                 <RedactedScript text="xdewdeukyufwefwe...wqefwfdewnjkdfnewoifne.........cdsfwf..........." />
                 <p className="text-xl lg:text-2xl">
