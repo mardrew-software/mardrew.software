@@ -19,14 +19,14 @@ export function Footer({
             }`}
         >
             <div className="flex flex-row gap-6">
-                {/* <Link target="_blank" href={'https://www.mardrew.art'}>
+                <Link target="_blank" href={'https://www.mardrew.art'}>
                     <Image
                         src={'/logo_pencil.png'}
                         width={50}
                         height={50}
                         alt="logo_pencil"
                     />
-                </Link> */}
+                </Link>
                 <Link
                     target="_blank"
                     href={'https://www.linkedin.com/in/mrrvm/'}
