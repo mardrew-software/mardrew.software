@@ -72,31 +72,31 @@ export function Footer({
                     closeModal={() => setShowModal(false)}
                 >
                     <div className="flex flex-col p-8 gap-4">
-                        <div className="flex gap-2 lg:gap-4  items-start">
+                        <div className="flex gap-2 lg:gap-4  items-center">
                             <span className="font-bold lg:text-xl">
                                 email via
                             </span>
                             <span>mariana@mardrew.software</span>
                         </div>
                         <hr />
-                        <div className="flex gap-2 lg:gap-4  items-start">
+                        <div className="flex gap-2 lg:gap-4  items-center">
                             <span className="font-bold lg:text-xl">
                                 company name
                             </span>
                             <span>mardrew</span>
                         </div>
 
-                        <div className="flex gap-2 lg:gap-4  items-start">
+                        <div className="flex gap-2 lg:gap-4  items-center">
                             <span className="font-bold lg:text-xl">
                                 kvk-nummer
                             </span>
                             <span>84172649</span>
                         </div>
-                        <div className="flex gap-2 lg:gap-4 items-start">
+                        <div className="flex gap-2 lg:gap-4 items-center">
                             <span className="font-bold lg:text-xl">btw-id</span>
                             <span>NL003922870B12</span>
                         </div>
-                        <div className="flex gap-2 lg:gap-4 items-start">
+                        <div className="flex gap-2 lg:gap-4 items-center">
                             <span className="font-bold lg:text-xl min-w-[100px]">
                                 trade names
                             </span>
