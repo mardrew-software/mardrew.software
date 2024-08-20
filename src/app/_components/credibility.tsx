@@ -9,18 +9,18 @@ export const Credibility = async () => {
     const credits = await getCredits();
     return (
         <div
-            id="credibility"
+            id="experience"
             className="flex flex-col items-center gap-6 mt-16 px-4 md:px-8 md:p-0"
         >
             <h1
                 className={`text-[30px] md:text-[50px] ${patrickHand.className}`}
             >
-                CREDIBILITY
+                EXPERIENCE
             </h1>
 
-            <div className="flex flex-col gap-4 md:w-[70%]">
+            <div className="flex flex-col gap-4 md:w-[70vw]">
                 <div className="flex flex-col border-solid border-2 border-black shadow-[6px_6px_0px_0px_#ffe280] rounded-sm p-4 md:p-6 gap-4">
-                    <div className="text-2xl pb-2">working experience</div>
+                    <div className="text-2xl pb-2">work experience</div>
                     <div className="flex flex-col w-full gap-4">
                         {credits
                             .filter((c: Credit) => c.type === 'experience')

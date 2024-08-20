@@ -6,7 +6,7 @@ import { TechTags } from './techTags';
 export const ProjectHeader = ({ project }: { project: Project }) => {
     return (
         <Link href={`/projects/${project.slug}`}>
-            <div className="shadow-md rounded cursor-pointer flex flex-col md:flex-row border-2 border-black bg-[#ffe280] md:max-w-[1000px] md:h-[400px] ">
+            <div className="shadow-md rounded cursor-pointer flex flex-col md:flex-row border-2 border-black bg-[#ffe280] lg:max-w-[1000px] max-w-[800px] md:h-[400px] ">
                 <Image
                     className="md:flex-shrink-0 hover:opacity-90 min-w-[100%] md:min-w-[400px]"
                     alt={project.title}

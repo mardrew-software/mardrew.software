@@ -30,8 +30,8 @@ export function Header({
                     <Link className="hover:underline" href={'/#projects'}>
                         PROJECTS
                     </Link>
-                    <Link className="hover:underline" href={'/#credibility'}>
-                        CREDIBILITY
+                    <Link className="hover:underline" href={'/#experience'}>
+                        EXPERIENCE
                     </Link>
                 </div>
                 <Image
@@ -62,9 +62,9 @@ export function Header({
                     <Link
                         onClick={setMenuOpen}
                         className="bg-white px-4 py-1 shadow-md  hover:underline"
-                        href={'#credibility'}
+                        href={'#experience'}
                     >
-                        CREDIBILITY
+                        EXPERIENCE
                     </Link>
                 </div>
             )}

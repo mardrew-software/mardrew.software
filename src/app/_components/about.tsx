@@ -16,7 +16,7 @@ export const About = () => {
                     I am an artist and full-stack software developer based in
                     Rotterdam.
                 </p>
-                <p className="text-xl text-right lg:text-left">
+                <p className="text-2xl text-right lg:text-left">
                     I like to create for small companies, thought-provoking
                     grassroot or non-profit collectives, and individuals, from
                     the very beginning to the very end.

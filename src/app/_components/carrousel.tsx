@@ -11,7 +11,7 @@ export default function Carrousel({
 }) {
     return (
         <>
-            <div className="hidden md:flex max-w-[800px] mx-auto">
+            <div className="hidden md:flex lg:max-w-[1000px] max-w-[800px] mx-auto">
                 <div
                     className="scrollbar w-full flex flex-row overflow-x-scroll snap-x snap-mandatory gap-4"
                     style={{

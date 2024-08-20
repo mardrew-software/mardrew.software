@@ -1,7 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
 import Modal from './modal';
+import { Tooltip } from 'react-tooltip';
+import { useState } from 'react';
+import { Inclusive_Sans } from 'next/font/google';
+
+const inclusiveSans = Inclusive_Sans({ weight: ['400'], subsets: ['latin'] });
 
 export function Footer({
     menuOpen,
@@ -12,6 +16,7 @@ export function Footer({
     showModal: boolean;
     setShowModal: (val: boolean) => void;
 }) {
+    const [copied, setCopied] = useState(false);
     return (
         <div
             className={`z-30 mt-8 lg:mt-16 py-8 lg:py-6 px-16 w-full flex flex-col lg:flex-row gap-6 lg:gap-0 justify-between items-center bg-white lg:bg-transparent ${
@@ -47,8 +52,23 @@ export function Footer({
                         alt="github"
                     />
                 </Link>
+
+                <div
+                    className="cursor-pointer"
+                    onClick={(e) => {
+                        e.stopPropagation();
+                        setShowModal(true);
+                    }}
+                >
+                    <Image
+                        src={'/legal.png'}
+                        width={50}
+                        height={50}
+                        alt="legal"
+                    />
+                </div>
             </div>
-            <Link className="hidden lg:flex" href={'/'}>
+            <Link className="flex" href={'/'}>
                 <Image
                     className="min-h-[50px]"
                     alt="mardrew.software"
@@ -57,25 +77,43 @@ export function Footer({
                     height={50}
                 />
             </Link>
-            <div
-                className="flex justify-center text-center cursor-pointer text-md md:text-xl hover:text-[#E9B9BD]"
-                onClick={(e) => {
-                    e.stopPropagation();
-                    setShowModal(true);
-                }}
-            >
-                CONTACT & BUREAUCRACY
-            </div>
+
+            {!copied ? (
+                <div
+                    onClick={() => {
+                        navigator.clipboard.writeText(
+                            'mariana@mardrew.software'
+                        );
+                        setCopied(true);
+                    }}
+                    className={`flex justify-center text-center cursor-pointer text-md md:text-xl hover:text-[#E9B9BD] ${inclusiveSans.className}`}
+                >
+                    mariana@mardrew.software
+                </div>
+            ) : (
+                <a
+                    onMouseLeave={() => setCopied(false)}
+                    data-tooltip-id="copied-tooltip"
+                    data-tooltip-content="COPIED"
+                    className={`flex justify-center text-center cursor-pointer text-md md:text-xl hover:text-[#E9B9BD] ${inclusiveSans.className}`}
+                >
+                    mariana@mardrew.software
+                </a>
+            )}
+
+            <Tooltip
+                id="copied-tooltip"
+                style={{ backgroundColor: '#E9B9BD' }}
+            />
+
             {showModal && (
                 <Modal
-                    title="CONTACT & BUREAUCRACY"
+                    title="LEGAL INFORMATION"
                     closeModal={() => setShowModal(false)}
                 >
                     <div className="flex flex-col p-8 gap-4">
                         <div className="flex gap-2 lg:gap-4  items-center">
-                            <span className="font-bold lg:text-xl">
-                                email via
-                            </span>
+                            <span className="font-bold lg:text-xl">email</span>
                             <span>mariana@mardrew.software</span>
                         </div>
                         <hr />
@@ -96,7 +134,10 @@ export function Footer({
                             <span className="font-bold lg:text-xl">btw-id</span>
                             <span>NL003922870B12</span>
                         </div>
-                        <div className="flex gap-2 lg:gap-4 items-center">
+                        <div
+                            className="flex gap-2 lg:gap-4 items-center
+                        "
+                        >
                             <span className="font-bold lg:text-xl min-w-[100px]">
                                 trade names
                             </span>
