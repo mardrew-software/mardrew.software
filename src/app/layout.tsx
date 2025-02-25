@@ -5,7 +5,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
     title: 'mardrew.software - freelance software developer',
     description:
-        'I am an artist and full-stack software developer based in Rotterdam. I like to create for small companies, thought-provoking grassroot or non-profit collectives, and individuals, from the very begining to the very end.',
+        'I am a full-stack software developer based in Rotterdam. I like to create for small companies, thought-provoking grassroot or non-profit collectives, and individuals, from the very begining to the very end.',
     authors: [{ url: 'https://mardrew.software', name: 'Mariana Martins' }],
     robots: { index: true, follow: true },
     keywords: [

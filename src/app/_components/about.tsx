@@ -27,11 +27,7 @@ export const About = () => {
                     financial needs.
                 </p>
                 <p className="text-xl lg:text-2xl flex flex-row flex-wrap gap-1">
-                    I work with{' '}
-                    <span className="rounded text-2xl lg:text-3xl px-2 shadow-sm border-solid border-[#ffe280] border-2">
-                        illustrations
-                    </span>
-                    ,{' '}
+                    I work with ,{' '}
                     <span className="rounded text-2xl lg:text-3xl px-2 border-solid border-[#E9B9BD] border-2 shadow-sm">
                         web design
                     </span>
