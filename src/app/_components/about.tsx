@@ -13,8 +13,7 @@ export const About = () => {
             />
             <div className="py-6 flex flex-col px-8 lg:px-0 max-w-[100%] lg:max-w-[70%] items-start gap-4 lg:gap-6">
                 <p className="text-3xl">
-                    I am an artist and full-stack software developer based in
-                    Rotterdam.
+                    I am a full-stack software developer based in Rotterdam.
                 </p>
                 <p className="text-2xl text-right lg:text-left">
                     I like to create for small companies, thought-provoking

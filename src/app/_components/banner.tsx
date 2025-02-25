@@ -25,8 +25,7 @@ export const Banner = () => {
                 </p>
                 <div className="mt-8 lg:mt-16 text-xl lg:text-2xl flex flex-col gap-4">
                     <p className="bg-white shadow-lg py-2 px-4 lg:max-w-max rounded">
-                        Hello. I am an artist and full-stack{' '}
-                        <b>software developer</b>
+                        Hello. I am a full-stack <b>software developer</b>
                     </p>
                     <p className="bg-white shadow-md py-2 px-4 lg:max-w-max rounded">
                         working either <b>remotely</b> or in{' '}
