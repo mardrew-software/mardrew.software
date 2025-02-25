@@ -70,7 +70,7 @@ export function Footer({
             </div>
             <Link className="flex" href={'/'}>
                 <Image
-                    className="min-h-[50px]"
+                    className="min-h-[40px]"
                     alt="mardrew.software"
                     src={'/logo_text.png'}
                     width={170}
