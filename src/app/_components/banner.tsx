@@ -10,7 +10,7 @@ export const Banner = () => {
                 priority
                 className="w-[80%] max-w-[740px]"
                 alt="mardrew.software"
-                src={'/logo_pink_rebranded.png'}
+                src={'/logo_pink.png'}
                 width={500}
                 height={500}
             />

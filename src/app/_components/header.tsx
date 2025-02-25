@@ -18,7 +18,7 @@ export function Header({
                 <Link href={'/'}>
                     <Image
                         alt="mardrew.software"
-                        src={'/logo_text_rebranded.png'}
+                        src={'/logo_text.png'}
                         width={150}
                         height={150}
                     />

@@ -72,7 +72,7 @@ export function Footer({
                 <Image
                     className="min-h-[50px]"
                     alt="mardrew.software"
-                    src={'/logo_text_rebranded.png'}
+                    src={'/logo_text.png'}
                     width={170}
                     height={50}
                 />
